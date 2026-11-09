@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BALAX IT — Conseil et services en informatique</title>
+<meta name="description" content="BALAX IT, société de conseil et de services en informatique et systèmes d'information, basée à Paris.">
+<link rel="canonical" href="https://balax.it/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f172a'/%3E%3Cpath d='M20 16h14a9 9 0 0 1 4 17 10 10 0 0 1-5 15H20z' fill='none' stroke='%2338bdf8' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#ffffff; --fg:#0f172a; --muted:#475569; --line:#e2e8f0;
+  --card:#f8fafc; --accent:#0369a1; --accent-fg:#ffffff;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0b1220; --fg:#e2e8f0; --muted:#94a3b8; --line:#1e293b;
+    --card:#111a2e; --accent:#38bdf8; --accent-fg:#0b1220;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent)}
+.wrap{max-width:960px; margin:0 auto; padding:0 24px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex; align-items:center; justify-content:space-between; height:64px}
+.brand{font-weight:700; letter-spacing:.04em; font-size:1.1rem; color:var(--fg); text-decoration:none}
+nav a{margin-left:20px; color:var(--muted); text-decoration:none; font-size:.95rem}
+nav a:hover{color:var(--fg)}
+.hero{padding:88px 0 64px}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem); line-height:1.15; margin:0 0 20px; max-width:18ch}
+.hero p{font-size:1.15rem; color:var(--muted); max-width:56ch; margin:0 0 32px}
+.btn{
+  display:inline-block; padding:12px 22px; border-radius:8px;
+  background:var(--accent); color:var(--accent-fg); text-decoration:none; font-weight:600;
+}
+section{padding:56px 0; border-top:1px solid var(--line)}
+section h2{font-size:1.5rem; margin:0 0 28px}
+.grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px}
+.card h3{margin:0 0 8px; font-size:1.05rem}
+.card p{margin:0; color:var(--muted); font-size:.95rem}
+.about p{max-width:66ch; color:var(--muted); margin:0 0 12px}
+footer{border-top:1px solid var(--line); padding:28px 0; color:var(--muted); font-size:.9rem}
+footer .wrap{display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between}
+footer a{color:var(--muted)}
+:focus-visible{outline:3px solid var(--accent); outline-offset:3px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">BALAX IT</a>
+    <nav aria-label="Navigation principale">
+      <a href="#activite">Activité</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Conseil et services en informatique</h1>
+      <p>BALAX IT accompagne les organisations sur leurs systèmes d'information, leurs réseaux et leurs outils numériques, et développe des applications sur mesure.</p>
+      <a class="btn" href="#contact">Nous contacter</a>
+    </div>
+  </div>
+
+  <section id="activite">
+    <div class="wrap">
+      <h2>Activité</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Conseil et architecture</h3>
+          <p>Audit, cadrage et conception de systèmes d'information adaptés à vos besoins.</p>
+        </div>
+        <div class="card">
+          <h3>Systèmes et postes de travail</h3>
+          <p>Déploiement, automatisation et exploitation des environnements informatiques.</p>
+        </div>
+        <div class="card">
+          <h3>Réseaux et télécoms</h3>
+          <p>Étude, mise en place et suivi d'infrastructures réseau et de télécommunications.</p>
+        </div>
+        <div class="card">
+          <h3>Applications sur mesure</h3>
+          <p>Conception et développement d'applications et d'outils, mobiles ou web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-propos" class="about">
+    <div class="wrap">
+      <h2>À propos</h2>
+      <p>BALAX IT est une société par actions simplifiée unipersonnelle (SASU) basée à Paris, spécialisée dans les prestations de conseil et de services en informatique et en systèmes d'information.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Pour toute demande, écrivez-nous : <a href="mailto:adrien@balax.it">adrien@balax.it</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© BALAX IT — Paris</span>
+    <a href="/mentions-legales.html">Mentions légales</a>
+  </div>
+</footer>
+</body>
+</html>
